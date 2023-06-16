@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:plant_app/components/my_bottom_nav_bar.dart';
-import 'package:plant_app/screens/home/components/body.dart';
+import 'package:clothes_store/components/my_bottom_nav_bar.dart';
+import 'package:clothes_store/screens/home/components/body.dart';
 
 // kelas dibawah ini adalah configurasi untuk web yang kita miliki termasuk
 //appbar,body dan navigasi bar bawah

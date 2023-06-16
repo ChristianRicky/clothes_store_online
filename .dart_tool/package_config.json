@@ -212,13 +212,13 @@
       "languageVersion": "2.7"
     },
     {
-      "name": "plant_app",
+      "name": "clothes_store",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "2.7"
     }
   ],
-  "generated": "2023-06-16T10:06:33.506849Z",
+  "generated": "2023-06-16T10:34:09.808537Z",
   "generator": "pub",
   "generatorVersion": "2.19.6"
 }

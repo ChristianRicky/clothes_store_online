@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:plant_app/constants.dart';
+import 'package:clothes_store/constants.dart';
 
 import 'featurred_plants.dart';
 import 'header_with_seachbox.dart';

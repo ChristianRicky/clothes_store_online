@@ -1,6 +1,6 @@
 {
-    "name": "plant_app",
-    "short_name": "plant_app",
+    "name": "clothes_store",
+    "short_name": "clothes_store",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

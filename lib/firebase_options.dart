@@ -70,7 +70,8 @@ class DefaultFirebaseOptions {
     messagingSenderId: '877956986270',
     projectId: 'flutter-uas-app',
     storageBucket: 'flutter-uas-app.appspot.com',
-    iosClientId: '877956986270-e6a17qjne36bar9oog2pqpsnd5g9tss4.apps.googleusercontent.com',
+    iosClientId:
+        '877956986270-e6a17qjne36bar9oog2pqpsnd5g9tss4.apps.googleusercontent.com',
     iosBundleId: 'com.example.plantApp',
   );
 }
