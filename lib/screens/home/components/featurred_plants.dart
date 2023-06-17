@@ -7,7 +7,7 @@ import '../../../constants.dart';
 
 class FeaturedPlants extends StatelessWidget {
   const FeaturedPlants({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
 // sebelum widget build kita harus mengoverride terlebih dahulu,
@@ -36,8 +36,8 @@ class FeaturedPlants extends StatelessWidget {
 
 class FeaturePlantCard extends StatelessWidget {
   const FeaturePlantCard({
-    Key key,
-    this.image,
+    Key? key,
+    required this.image,
   }) : super(key: key);
   final String image;
 

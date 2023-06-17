@@ -9,7 +9,7 @@ import '../constants.dart';
 
 class MyBottomNavBar extends StatelessWidget {
   const MyBottomNavBar({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
 // kita membuat widget baru, sebelumnya kita override widget tersebut agar tidak menumpuk class lain

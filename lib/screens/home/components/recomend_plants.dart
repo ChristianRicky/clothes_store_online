@@ -7,7 +7,7 @@ import '../../../constants.dart';
 
 class RecomendsPlants extends StatelessWidget {
   const RecomendsPlants({
-    Key key,
+    Key? key,
   }) : super(key: key);
 // tentunya kita mengoverride kode dibawahnya lalu kita membuild widget baru untuk
 // memasukkan konfigurasi serta gambar produk, kita membuat child baris lalu turunan
@@ -24,6 +24,7 @@ class RecomendsPlants extends StatelessWidget {
             title: "lidah buaya",
             country: "indonesia",
             price: 25000,
+            press: () {},
           ),
           RecomendPlantCard(
             image: "assets/images/image_2.png",
@@ -45,12 +46,12 @@ class RecomendsPlants extends StatelessWidget {
 
 class RecomendPlantCard extends StatelessWidget {
   const RecomendPlantCard({
-    Key key,
-    this.image,
-    this.title,
-    this.country,
-    this.price,
-    this.press,
+    Key? key,
+    required this.image,
+    required this.title,
+    required this.country,
+    required this.price,
+    required this.press,
   }) : super(key: key);
 
   final String image, title, country;
@@ -82,7 +83,6 @@ class RecomendPlantCard extends StatelessWidget {
         children: <Widget>[
           Image.asset(image),
           GestureDetector(
-            onTap: press,
             child: Container(
               padding: EdgeInsets.all(kDefaultPadding / 2),
               decoration: BoxDecoration(
@@ -121,7 +121,7 @@ class RecomendPlantCard extends StatelessWidget {
                     '$price',
                     style: Theme.of(context)
                         .textTheme
-                        .button
+                        .button!
                         .copyWith(color: kPrimaryColor),
                   )
                 ],

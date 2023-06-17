@@ -1,6 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+<script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+
+<script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+<script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+<script>
+  const firebaseConfig = {
+  apiKey: "AIzaSyDTlAX86wk-QabCYhfWvbc5BLC1O5u01SE",
+  authDomain: "flutter-uas-app.firebaseapp.com",
+  projectId: "flutter-uas-app",
+  storageBucket: "flutter-uas-app.appspot.com",
+  messagingSenderId: "877956986270",
+  appId: "1:877956986270:web:1fed93925936f762a1d28f",
+  measurementId: "G-68TD3S2128"
+};
+firebase.initializeApp(firebaseConfig);
+
+</script>
   <!--
     If you are serving your web app in a path other than the root, change the
     href value below to reflect the base path you are serving from.
