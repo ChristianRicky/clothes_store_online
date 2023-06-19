@@ -9,11 +9,20 @@ class Database {
   }
 
   static Future<void> tambahData({required itemproduk item}) async {
-    DocumentReference docRef = tblitem.doc(item.itemjudul);
+    DocumentReference docRef = tblitem.doc(item.name);
 
     await docRef
         .set(item.toJson())
         .whenComplete(() => print("data berhasil diinput"))
+        .catchError((e) => print(e));
+  }
+
+  static Future<void> hapusData({required String judulhapus}) async {
+    DocumentReference docRef = tblitem.doc(judulhapus);
+
+    await docRef
+        .delete()
+        .whenComplete(() => print("data berhasil dihapus"))
         .catchError((e) => print(e));
   }
 }

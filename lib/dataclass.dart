@@ -1,17 +1,17 @@
 class itemproduk {
-  final String itemjudul;
-  final String itemisi;
+  final String name;
+  final String price;
 
-  itemproduk({required this.itemjudul, required this.itemisi});
+  itemproduk({required this.name, required this.price});
 
   Map<String, dynamic> toJson() {
-    return {"judulproduk": itemjudul, "isiitem": itemisi};
+    return {"name": name, "price": price};
   }
 
   factory itemproduk.fromJson(Map<String, dynamic> json) {
     return itemproduk(
-      itemjudul: json["judulproduk"],
-      itemisi: json["isiproduk"],
+      name: json["name"],
+      price: json["price"],
     );
   }
 }
