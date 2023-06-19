@@ -58,6 +58,9 @@ class _detailDataState extends State<detailData> {
               decoration: InputDecoration(
                   border: OutlineInputBorder(), labelText: "masukkan harga"),
             ),
+            SizedBox(
+              height: 8.0,
+            ),
             ElevatedButton(
               onPressed: () {
                 final data =
@@ -66,6 +69,9 @@ class _detailDataState extends State<detailData> {
                 Navigator.pop(context);
               },
               child: Text('simpan data'),
+            ),
+            SizedBox(
+              height: 8.0,
             ),
             ElevatedButton(
               onPressed: () {},
